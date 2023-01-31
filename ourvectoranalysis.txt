@@ -1,0 +1,58 @@
+<our vector> Analysis
+
+<ourvector<ourvector>> stats:
+vectors created : 1
+ # it is created in line 419 to store vector of vector of strains
+elements inserted : 3
+# pushing 3 vectors into the double vectors in loadSTRs
+elements accessed : 64
+# a) elements accessed in display functions to output data to console 
+  b) elements accessed in processDna command to compare strings to other strings from DNA vector
+c) elements accessed  twice in allStr to compare strings and also display the elements
+
+ourvector<People> stats:
+vectors created : 1
+# it is created in line 420 to store vector of struct from txt file
+elements inserted : 3
+# pushing 3 temporary structs into our vector of structs in loadData function
+elements accessed : 31
+# a) elements accessed in display functions to output data to console 
+  b) elements accessed in processDna command to get strings for comparison
+c) elements accessed in search functions (all 4) to compare the indexes of names and int vector
+
+
+ourvector<int> stats:
+vectors created : 18
+# 1) line 18 for struct
+2)line 421 for count vector
+3)line 420 we create a  vector of struct which has int vector
+4)line 222 we create a vector to store repetitive strs
+5) loadData function line 103 created the remaining vectors of ints to push data into Database vector(counted 6) rest unknown
+elements inserted : 36
+# a)pushing 3 temporary structs into our vector of structs in loadData function'
+b)pushing back in repeat vector
+c)pushing back in count vector 
+elements accessed : 46
+# a) elements accessed in display functions to output data to console 
+  b) elements accessed in processDna command to get strings for comparison
+c) elements accessed in search functions (all 4) to compare the indexes of names and int vector
+d)elements accessed in max, match  functions
+
+
+ourvector<char> stats:
+vectors created : 15
+# 1) line 18 for struct
+2)line 419 for vector of vector
+3)line 421 we create a  vector of DNA 
+4)line 95 we create a vector to store strings
+5)line  213 creates 3 str vectors for 3 STRS ; (agct,..,etc)
+6) loadSTRs creates vectors to push it back into vectors ( 8) 
+elements inserted : 209
+# a)pushing strings into double string vector 
+b)pushing strings into processoneStr
+c)pushing strings into DNA vector
+elements accessed : 4024
+# a) elements accessed in display functions to output data to console 
+  b) elements accessed in processDna command to get strings for comparison
+c) elements accessed in search functions (all 4) to compare Dna strings 
+d)elements accessed in max, match  functions to get size of vectors and string comparison
