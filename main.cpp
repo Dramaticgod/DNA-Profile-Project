@@ -1,7 +1,5 @@
 //
-//  Project 1: DNA Profiling
-//  UIN : 677725560 , Name : Jash Shah 
-//  Creative Component a command that can count all STR instances
+//  Project : DNA Profiling
 //
 
 #include <fstream>
